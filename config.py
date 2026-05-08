@@ -129,7 +129,7 @@ class Settings:
     bot_username: str = os.getenv("BOT_USERNAME", "").lstrip("@")
     owner_ids: Set[int] = field(default_factory=lambda: _ids("OWNER_IDS") | _ids("OWNER_ID"))
     sudo_ids: Set[int] = field(default_factory=lambda: _ids("SUDO_IDS"))
-    owner_username: str = os.getenv("OWNER_USERNAME", "@Official_Bika")
+    owner_username: str = os.getenv("OWNER_USERNAME", "@HANTHAR999")
 
     mongo_uri: str = os.getenv("MONGO_URI", "")
     db_name: str = os.getenv("DB_NAME", "waifu_adding_v2")
